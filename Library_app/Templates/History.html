@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Linking JS</title>
+     <script src="UI_JS.js" defer></script> 
+    <link rel="stylesheet" href="C:\Users\Atharv Deshmane\OneDrive\Documents\Desktop\Library_app\Static\Design.css"><title>Add Book</title>
+
+<style>
+        .horizontal-bar {
+            display: flex; /* Makes items align horizontally */
+            justify-content: flex-start; /* Aligns images to the left */
+            align-items:left* Centers items vertically */
+            background-color: #FFD700; /* Golden background color */
+            padding: 10px; /* Adds some padding inside the bar */
+            border-radius: 5px; /* Optional: rounds the corners */
+            width: 100%; /* Full width; adjust if needed */
+            box-sizing: border-box;
+            gap: 5px; /* Controls space between images; decrease this value for closer images */
+        }
+        .horizontal-bar img {
+            height:25px; /* Sets image height; adjust as needed */
+            width:25pxpx; /* Keeps aspect ratio */
+            cursor: pointer; /* Makes images look clickable */
+        }
+    </style>
+
+   <style>
+        .horizontal-bar {
+            display: flex; /* Makes items align horizontally */
+            justify-content: center; /* Centers the links in the bar */
+            align-items: center; /* Centers items vertically */
+            background-color: #FFD700; /* Golden background color */
+            padding: 10px; /* Adds some padding inside the bar */
+            border-radius: 5px; /* Optional: rounds the corners */
+            width: 100%; /* Full width; adjust if needed */
+            box-sizing: border-box;
+            gap: 15px; /* Space between links; adjust for closer/farther spacing */
+        }
+        .horizontal-bar a {
+            text-decoration: none; /* Removes underline from links */
+            color: #000; /* Black text color; change as needed */
+            font-size: 16px; /* Text size; adjust as needed */
+            padding: 5px 10px; /* Adds padding around each link */
+            border-radius: 3px; /* Optional: rounds link corners */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+        .horizontal-bar a:hover {
+            background-color: rgba(0, 0, 0, 0.1); /* Light gray on hover for interactivity */
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            background-color: #001f3f; /* Deep Navy Blue */
+            color: #ffffff;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #003366;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            padding: 0 20px;
+        }
+
+        /* Vertical dividers (only for desktop) */
+        .footer-column:not(:last-child) {
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h3 {
+            color: #ffcc00; /* Gold/Yellow color */
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .content {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        .list-item:hover {
+            color: #ffcc00;
+        }
+
+        .list-item i {
+            margin-right: 15px;
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .address-text {
+            margin-top: 10px;
+        }
+
+        .visitor-section {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body bgcolor=#003399 >
+    <div class="horizontal-bar">
+        <a href="https://www.instagram.com/bsietofficial/">
+            <img src="{{ url_for('static', filename='images/insta.webp') }}" alt="Instagram"></a>
+        <a href="https://www.facebook.com/Bsiet12132020">
+            <img src="{{ url_for('static', filename='images/fb.jpg') }}" alt="Facebook"></a>
+        <a href="https://www.instagram.com/bsietofficial/">
+            <img src="{{ url_for('static', filename='images/in.png') }}" alt="LinkedIn"></a>
+        <a href="https://www.youtube.com/@drbapujisalunkheinstofengg3183">
+            <img src="{{ url_for('static', filename='images/yt.jpg') }}" alt="YouTube"></a>
+        <!-- Add more images as needed -->
+    </div><br>
+<center><img src="{{ url_for('static', filename='images/BG.png') }}" alt="college"
+style="width:1500px;height:250px;"></img></center>
+<center><h1 >
+<p style="color:white;">History</p></h1><br><br>
+    <table border="1"style="background-color: #f2f2f2ff;">
+  
+
+        <tr>
+            <th>Book Name</th>
+            <th>Member Name</th>
+            <th>Issue Date</th>
+            <th>Return Date</th>
+            <th>Status</th>
+        </tr>
+         <tr>
+            <td>Java Programming</td>
+            <td>Atharv Amar Deshmane</td>
+            <td>2025-08-20T13:04:55.</td>
+            <td>2026-08-23T13:01:05.</td>
+            <td>Received</td>
+        </tr>
+        <tr>
+            <td>Advance Java Programming</td>
+            <td>Atharv Rajendra Kumbhar</td>
+            <td>2025-08-27T13:09:58.</td>
+            <td>2026-08-29T13:03:58.</td>
+            <td>Received</td>
+        </tr> 
+        <tr>
+            <td>Software Testing</td>
+            <td>Somanth Uttam Desai</td>
+            <td>2025-09-03T13:12:58.</td>
+            <td>2026-09-23T13:01:15.</td>
+            <td>Received</td>
+        </tr> 
+         <tr>
+            <td>Advanced Web Technologies</td>
+            <td>Vaishnavi Rajaram Patil</td>
+            <td>2025-09-10T13:11:50.</td>
+            <td>2026-09-13T13:01:45.</td>
+            <td>Received</td>
+        </tr>
+        <tr>
+            <td>Advanced Microprocessor</td>
+            <td>Amol Shamprasad Dharmadhikari</td>
+            <td>2025-09-17T13:10:58.</td>
+            <td>2026-09-20T13:10:33.</td>
+            <td>Received</td>
+        </tr>
+        <tr>
+            <td>Oprating System </td>
+            <td>Aditi Sanjay Patil</td>
+            <td>2025-09-24T13:04:00.</td>
+            <td>2026-09-29T13:01:05.</td>
+            <td>Received</td>
+        </tr>
+        <tr>
+            <td>Communication Skills </td>
+            <td>Rushikesh Ananda Patil</td>
+            <td>2025-09-24T13:09:58.</td>
+            <td>2026-09-29T13:02:58.</td>
+            <td>Received</td>
+        </tr>
+           <tr>
+            <td>Management </td>
+            <td>Apurva Sakharam Patil</td>
+            <td>2025-09-24T13:11:58.</td>
+            <td>2026-09-29T13:01:25.</td>
+            <td>Received</td>
+        </tr>
+           <tr>
+            <td>Communication Skills </td>
+            <td>Shravani Sambhaji Adnaik</td>
+            <td>2025-10-01T13:04:58.</td>
+            <td>2026-10-04T13:11:22.</td>
+            <td>Received</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Computer Security </td>
+            <td>Shravani Sambhaji Adnaik</td>
+            <td>2025-10-01T13:01:58.</td>
+            <td>2026-10-04T13:10:01.</td>
+            <td>Received</td>
+        </tr>
+        <tr>
+            <td>Computer Security </td>
+            <td>Atharv Amar Deshmane</td>
+            <td>2025-10-01T13:04:50.</td>
+            <td>2026-10-04T13:01:58.</td>
+            <td>Received</td>
+        </tr>
+        </tr>
+           <tr>
+            <td>Computer Security </td>
+            <td>Atharv Amar Deshmane</td>
+            <td>2025-10-01T13:03:11.</td>
+            <td>2026-10-04T13:01:12.</td>
+            <td>Received</td>
+        </tr>
+        </tr>
+           <tr>
+            <td>Computer Security </td>
+            <td>Aditya Ananda Alekar</td>
+            <td>2025-10-13T13:03:18.</td>
+            <td>2026-10-14T13:12:28.</td>
+            <td>Received</td>
+        </tr>
+        </tr>
+           <tr>
+            <td>Java Programming </td>
+            <td>Aditya Ananda Alekar</td>
+            <td>2025-10-13T13:12:04.</td>
+            <td>2026-10-14T13:02:48.</td>
+            <td>Received</td>
+        </tr>
+        <tr>
+            <td>Advance Java Programming</td>
+            <td>Parth Dadaso Guravr</td>
+            <td>2025-11-27T13:04:38.</td>
+            <td>2026-11-29T13:01:17.</td>
+            <td>Received</td>
+        </tr> 
+        <tr>
+            <td>Software Testing</td>
+            <td>Harshwardhan Sarjerao Kamble</td>
+            <td>2025-12-03T13:5:58.</td>
+            <td>2026-12-05T13:03:50.</td>
+            <td>Received</td>
+        </tr> 
+         <tr>
+            <td>Advanced Web Technologies</td>
+            <td>Parth Vijay Mane</td>
+            <td>2025-12-10T13:12:09.</td>
+            <td>2026-12-13T13:01:14.</td>
+            <td>Received</td>
+        </tr>
+        <tr>
+            <td>Advanced Microprocessor</td>
+            <td>Omkar Sagar Gudale</td>
+            <td>2025-12-17T13:11:47.</td>
+            <td>2026-12-20T13:01:58.</td>
+            <td>Received</td>
+        </tr>
+        <tr>
+            <td>Computer Security </td>
+            <td>Ayush Anil Khandekar</td>
+            <td>2025-12-24T13:10:00.</td>
+            <td>2026-12-27T13:02:00.</td>
+            <td>Received</td>
+        </tr>
+        <tr>
+            <td>Computer Security </td>
+            <td>Satya Laxman Patel</td>
+            <td>2025-12-27T13:11:11.</td>
+            <td>2026-12-29T13:01:08.</td>
+            <td>Received</td>
+        </tr>
+        </tr>
+           <tr>
+            <td>Computer Security </td>
+            <td>Shubham Vijay Nalawade</td>
+            <td>2025-12-31T13:12:11.</td>
+            <td>2026-01-05T13:05:58.</td>
+            <td>Received</td>
+        </tr>
+        </tr>
+           <tr>
+            <td>Computer Security </td>
+            <td>Adityaraj Dilip Shetge</td>
+            <td>2025-01-06T13:03:58.</td>
+            <td>2026-01-15T13:12:23.</td>
+            <td>Received</td>
+        </tr>
+        </tr>
+           <tr>
+            <td>Java Programming </td>
+            <td>Rahi Satyajit Tambade</td>
+            <td>2025-01-06T13:11:35.</td>
+            <td>2026-01-15T13:04:43.</td>
+            <td>Received</td>
+        </tr>
+        <tr>
+            <td>Communication Skills </td>
+            <td>Sneha Ravindra Suryawanshi</td>
+            <td>2025-01-20T13:05:00.</td>
+            <td>2026-01-29T13:01:00.</td>
+            <td>Received</td>
+        </tr>
+        </tr>
+           <tr>
+            <td>Software Engineering </td>
+            <td>Shubham Vijay Nalawade</td>
+            <td>2025-01-25T13:12:47.</td>
+            <td>2026-02-05T13:02:52.</td>
+            <td>Received</td>
+        </tr>
+        </tr>
+           <tr>
+            <td>Computer Network </td>
+            <td>Adityaraj Dilip Shetge</td>
+            <td>2025-02-06T13:11:12.</td>
+            <td>2026-02-10T13:12:13.</td>
+            <td>Received</td>
+        </tr>
+        </tr>
+           <tr>
+            <td>Computer Hardware And Maintence </td>
+            <td>Rahi Satyajit Tambade</td>
+            <td>2025-02-10T13:01:01.</td>
+            <td>None</td>
+            <td>Issued</td>
+        </tr>
+
+        
+        {% for t in transactions %}
+        <tr>
+            <td>{{ t.books.book_name }}</td>
+            <td>{{ t.members.name }}</td>
+            <td>{{ t.issue_date }}</td>
+            <td>{{ t.return_date }}</td>
+            <td>{{ t.status }}</td>
+        </tr>
+         
+        {% else %}
+        <tr>
+            <td colspan="5" style="text-align:center;">No transactions found.</td>
+        </tr>
+        {% endfor %}
+        
+    </table><br><br>
+   <a href="{{ url_for('index') }}">  
+         <p style="color:white;">Back</p></a><br><br></center>
+<center><img src="{{ url_for('static', filename='images/list.gif') }}" alt="List"
+style="width:400px;height:400px;"></img></center>
+
+<footer class="footer-container">
+        
+        <div class="footer-column">
+            <h3>INSTITUTE DETAILS</h3>
+            <div class="content">
+                <strong>DR. BAPUJI SALUNKHE INSTITUTE OF ENGINEERING AND TECHNOLOGY</strong>
+                <p class="address-text">
+                    2130, E Ward<br>
+                    Tarabai Park<br>
+                    Kolhapur<br>
+                    Pin Code : 416-003
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>IMPORTANT LINKS</h3>
+            <div class="content">
+                <a href="#" class="list-item"><i class="fas fa-bullhorn"></i> Notice</a>
+                <a href="#" class="list-item"><i class="fas fa-crosshairs"></i> Newsletters</a>
+                <a href="#" class="list-item"><i class="fas fa-image"></i> Photo Gallery</a>
+                <a href="#" class="list-item"><i class="fas fa-clapperboard"></i> Video Gallery</a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>CONTACT DETAILS</h3>
+            <div class="content">
+                <div class="list-item"><i class="fas fa-phone-flip"></i> 0231-2658610</div>
+                <div class="list-item"><i class="fas fa-envelope"></i> principal@bsiet.org</div>
+            </div>
+        </div>
+
+       <div class="footer-column" style="border-right: none;">
+            <h3>SOCIAL MEDIA</h3>
+            <div class="content">
+                <a href="https://www.youtube.com/@drbapujisalunkheinstofengg3183" class="list-item"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://www.facebook.com/Bsiet12132020" class="list-item"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.instagram.com/bsietofficial/" class="list-item"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.instagram.com/bsietofficial/" class="list-item"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+            
+        </div>
+
+    </footer>
+</body>
+</html>

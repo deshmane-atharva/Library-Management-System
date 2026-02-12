@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Linking JS</title>
+     <script src="UI_JS.js" defer></script> 
+    <link rel="stylesheet" href="C:\Users\Atharv Deshmane\OneDrive\Documents\Desktop\Library_app\Static\Design.css"><title>Add Book</title>
+
+<style>
+        .horizontal-bar {
+            display: flex; /* Makes items align horizontally */
+            justify-content: flex-start; /* Aligns images to the left */
+            align-items:left* Centers items vertically */
+            background-color: #FFD700; /* Golden background color */
+            padding: 10px; /* Adds some padding inside the bar */
+            border-radius: 5px; /* Optional: rounds the corners */
+            width: 100%; /* Full width; adjust if needed */
+            box-sizing: border-box;
+            gap: 5px; /* Controls space between images; decrease this value for closer images */
+        }
+        .horizontal-bar img {
+            height:25px; /* Sets image height; adjust as needed */
+            width:25pxpx; /* Keeps aspect ratio */
+            cursor: pointer; /* Makes images look clickable */
+        }
+    </style>
+
+   <style>
+        .horizontal-bar {
+            display: flex; /* Makes items align horizontally */
+            justify-content: center; /* Centers the links in the bar */
+            align-items: center; /* Centers items vertically */
+            background-color: #FFD700; /* Golden background color */
+            padding: 10px; /* Adds some padding inside the bar */
+            border-radius: 5px; /* Optional: rounds the corners */
+            width: 100%; /* Full width; adjust if needed */
+            box-sizing: border-box;
+            gap: 15px; /* Space between links; adjust for closer/farther spacing */
+        }
+        .horizontal-bar a {
+            text-decoration: none; /* Removes underline from links */
+            color: #000; /* Black text color; change as needed */
+            font-size: 16px; /* Text size; adjust as needed */
+            padding: 5px 10px; /* Adds padding around each link */
+            border-radius: 3px; /* Optional: rounds link corners */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
+        .horizontal-bar a:hover {
+            background-color: rgba(0, 0, 0, 0.1); /* Light gray on hover for interactivity */
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            background-color: #001f3f; /* Deep Navy Blue */
+            color: #ffffff;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #003366;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            padding: 0 20px;
+        }
+
+        /* Vertical dividers (only for desktop) */
+        .footer-column:not(:last-child) {
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h3 {
+            color: #ffcc00; /* Gold/Yellow color */
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .content {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        .list-item:hover {
+            color: #ffcc00;
+        }
+
+        .list-item i {
+            margin-right: 15px;
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .address-text {
+            margin-top: 10px;
+        }
+
+        .visitor-section {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body bgcolor=#003399 >
+   <div class="horizontal-bar">
+        <a href="https://www.instagram.com/bsietofficial/">
+            <img src="{{ url_for('static', filename='images/insta.webp') }}" alt="Instagram"></a>
+        <a href="https://www.facebook.com/Bsiet12132020">
+            <img src="{{ url_for('static', filename='images/fb.jpg') }}" alt="Facebook"></a>
+        <a href="https://www.instagram.com/bsietofficial/">
+            <img src="{{ url_for('static', filename='images/in.png') }}" alt="LinkedIn"></a>
+        <a href="https://www.youtube.com/@drbapujisalunkheinstofengg3183">
+            <img src="{{ url_for('static', filename='images/yt.jpg') }}" alt="YouTube"></a>
+        <!-- Add more images as needed -->
+    </div><br>
+<center><img src="{{ url_for('static', filename='images/BG.png') }}" alt="college"
+style="width:1500px;height:250px;"></img></center>
+<center><h1 >
+<p style="color:white;">Add Book</p></h1>
+   <div style="text-align: center;"> <form method="post">
+       <p style="color:white;"> Name: <input name="book_name" required></p>
+        <p style="color:white;"> Book Id: <input name="book_id" required  autofocus></p>
+        <input type="submit" value="Add" button onclick="Add()"></button>
+        <script>
+function Add() {
+  alert("Book Added Succesfully.");
+}
+</script>
+     </div></form><br><br>
+    <a href="{{ url_for('index') }}">
+         <p style="color:white;">Back</p></a> </center>
+        
+<center><img src="{{ url_for('static', filename='images/book.gif') }}" alt="book"
+style="width:350px;height:350px;"></center>
+
+<footer class="footer-container">
+        
+        <div class="footer-column">
+            <h3>INSTITUTE DETAILS</h3>
+            <div class="content">
+                <strong>DR. BAPUJI SALUNKHE INSTITUTE OF ENGINEERING AND TECHNOLOGY</strong>
+                <p class="address-text">
+                    2130, E Ward<br>
+                    Tarabai Park<br>
+                    Kolhapur<br>
+                    Pin Code : 416-003
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>IMPORTANT LINKS</h3>
+            <div class="content">
+                <a href="#" class="list-item"><i class="fas fa-bullhorn"></i> Notice</a>
+                <a href="#" class="list-item"><i class="fas fa-crosshairs"></i> Newsletters</a>
+                <a href="#" class="list-item"><i class="fas fa-image"></i> Photo Gallery</a>
+                <a href="#" class="list-item"><i class="fas fa-clapperboard"></i> Video Gallery</a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>CONTACT DETAILS</h3>
+            <div class="content">
+                <div class="list-item"><i class="fas fa-phone-flip"></i> 0231-2658610</div>
+                <div class="list-item"><i class="fas fa-envelope"></i> principal@bsiet.org</div>
+            </div>
+        </div>
+
+        <div class="footer-column" style="border-right: none;">
+            <h3>SOCIAL MEDIA</h3>
+            <div class="footer-column" style="border-right: none;">
+            <div class="content">
+                <a href="https://www.youtube.com/@drbapujisalunkheinstofengg3183" class="list-item"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://www.facebook.com/Bsiet12132020" class="list-item"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.instagram.com/bsietofficial/" class="list-item"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.instagram.com/bsietofficial/" class="list-item"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+            
+            
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

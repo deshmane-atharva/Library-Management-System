@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+#menu button { margin: 5px; }
+form { margin-top: 20px; }
+input, select { margin: 5px; }
+table { border-collapse: collapse; width: 75%; }
+th, td { border: 1px solid #ddd; padding: 15px; text-align: cenetr; }
+
